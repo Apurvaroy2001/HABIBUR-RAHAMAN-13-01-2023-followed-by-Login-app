@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="full-page">
+
+        <div class="navbar">
+            <nav>
+                <ul id="MenuItems">
+                    <li>
+                        <img class="img" src="img/4.png" class="logo">
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dashboard</a>
+                    </li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li>
+                        <button class="loginbtn"
+                            onclick="document.getElementById('login-form').style.display='block'">Sign In</button>
+                    </li>
+                    <li> <button style="color:rgb(248, 7, 15)" class="loginbtn" onclick="document.getElementById()">Log
+                            out</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Login</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                </div>
+
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box" <span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="First name" required><br><br>
+                    <input type="text" class="input-field" placeholder="Last name" required><br><br>
+                    <input type="email" class="input-field" placeholder="Enter Email" required><br><br>
+                    <input type="password" class="input-field" placeholder="Enter Password" required><br>
+                    <input type="checkbox" class="check-box" <span>I agree to the term and conditions</span>
+                    <button type="submit" class="submit-btn">Sign up</button>
+                </form>
+            </div>
+        </div>|
+        <script>
+            var x = document.getElementById('login');
+            var y = document.getElementById('register');
+            var z = document.getElementById('btn');
+            function register() {
+                x.style.left = '-400px';
+                y.style.left = '50px';
+                z.style.left = '110px';
+            }
+            function login() {
+                x.style.left = '50px';
+                y.style.left = '450px';
+                z.style.left = '0px';
+            }
+        </script>
+        <script>
+            var modal = document.getElementById('login-form');
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        </script>
+        <div class="ftr">
+            <footer>
+                <div class="footer-content">
+                    <h5>Thank You</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates esse quo perferendis facilis
+                        quae aliquid.</p>
+                    <ul class="socials">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>Designed by Habibur Rahaman</p>
+                </div>
+            </footer>
+        </div>
+</body>
+
+</html>
+
+
+<!-- <div>
+            <div id="Sign-up-form" class="login-page">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" onclick="login2()" class="toggle-btn">Register</button>
+                    </div>
+                    <form id="login" class="input-group-login">
+                        <input type="text" class="input-field" placeholder="Enter your name" required><br><br>
+                        <input type="text" class="input-field" placeholder="Enter your email Id" required><br><br>
+                        <input type="password" class="input-field" placeholder="Enter a Password" required><br>
+                        <input type="checkbox" class="check-box" <span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Log in</button>
+
+                    </form>
+                </div>
+            </div>|
+        </div> -->
